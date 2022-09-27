@@ -5,7 +5,7 @@ export class MovieService {
   constructor(token) {
     this.token = token;
     this.baseUrl =
-      'https://my-movie-db22.herokuapp.com/movies';
+      'https://faraflix.herokuapp.com/movies';
     this.header = {
       headers: { Authorization: `Bearer ${this.token}` },
     };

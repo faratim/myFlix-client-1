@@ -31,7 +31,7 @@ export function ProfileView(props) {
       // request to Delete user from webserver
       axios
         .delete(
-          `https://my-movie-db22.herokuapp.com/users/${user._id}`,
+          `https://faraflix.herokuapp.com/users/${user._id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -81,7 +81,7 @@ export function ProfileView(props) {
     if (Username && updatedUser && token) {
       axios
         .put(
-          `https://my-movie-db22.herokuapp.com/users/${Username}`,
+          `https://faraflix.herokuapp.com/users/${Username}`,
           { ...updatedUser },
           {
             headers: { Authorization: `Bearer ${token}` },

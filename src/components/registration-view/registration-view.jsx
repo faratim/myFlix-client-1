@@ -89,7 +89,7 @@ export function RegistrationView(props) {
     const isReq = validate();
     if (isReq) {
       axios
-        .post('https://my-movie-db22.herokuapp.com/users', {
+        .post('https://faraflix.herokuapp.com/users', {
           Username: username,
           Password: password,
           Email: email,

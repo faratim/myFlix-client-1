@@ -46,7 +46,7 @@ export function LoginView(props) {
       /*Send a request to the server for authentication*/
       /* then call props.onLoggedIn(username), which provides the username to our parent component (child to parent communication)*/
       axios
-        .post('https://my-movie-db22.herokuapp.com/login', {
+        .post('https://faraflix.herokuapp.com/login', {
           Username: username,
           Password: password,
         })
